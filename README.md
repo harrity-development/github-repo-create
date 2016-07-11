@@ -12,7 +12,7 @@ positional arguments:
 
 optional arguments:
   -h, --help            show this help message and exit
-  -t TOKEN, --token TOKEN
+  -t TOKEN, --token TOKEN 
                         The GitHub User's Token. If no token is provided then
                         an attempt at pulling the value from the user's
                         environment variables is made.
