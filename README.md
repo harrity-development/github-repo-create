@@ -27,7 +27,7 @@ optional arguments:
   show this help message and exit  
   
   -t TOKEN, --token TOKEN  
-  The GitHub User's Token. If no token is provided then an attempt at pulling the value from the user's environment variables is made.  
+  The GitHub User's Token. If no token is provided then an attempt at pulling the value from the user's environment variables using the variable name 'gitT' is made.  
   
   -u URL, --url URL  
   The URL with more info about the repository.  
