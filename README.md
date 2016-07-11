@@ -1,5 +1,5 @@
 # Python.GitHub.RepoCreate
-Repository for a python script for creating GitHub Repositories through the GitHub api
+Python script for creating GitHub Repositories through the GitHub api
 
 usage: GitHub.Repo.Create.py [-h] [-t TOKEN] [-u URL] [-p PRIVATE] [-i ISSUES]
                              [-w WIKI] [-d DOWNLOADS] [-m TEAMID]
