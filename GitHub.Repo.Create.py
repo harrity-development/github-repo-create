@@ -3,7 +3,7 @@ import simplejson
 import os
 import argparse
 
-#Parse the arguments passed into the script
+#Parse the arguments passed into the script, move this to its own script
 parser = argparse.ArgumentParser()
 parser.add_argument("name",type=str,help="The name of the new GitHub Repository.")
 parser.add_argument("description",type=str,help="A description for the new GitHub Repository.")
@@ -24,6 +24,7 @@ if args.token is not None:
 else:
     t = os.environ['gitT'] 
 
+#move the data instantiation and population to its own script
 data = {}
 data['name']=args.name
 data['description']=args.description
@@ -46,8 +47,10 @@ if args.gitignore is not None:
 if args.license is not None:
     data['license_template']=args.license
 
+#move the request to its own script
 r = requests.post('https://api.github.com/user/repos?access_token='+t, json = data)
 c = r.content
+#move the parsing and building of string from response to its own script
 j = simplejson.loads(c)
 idUrl = {}
 
@@ -57,6 +60,7 @@ for item in j.items():
     elif item[0]=="git_url":
         idUrl[item[0]] = item[1]
 
+#printing of string build from response stays
 if len(idUrl) > 0:
     print ("{}".format(str(idUrl)))
 else:
