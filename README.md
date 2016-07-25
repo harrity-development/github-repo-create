@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Python.GitHub.RepoCreate
 Python script for creating GitHub Repositories through the GitHub api
 
@@ -55,3 +56,7 @@ description
   
   *-l LICENSE, --license LICENSE*  
   The license template to apply to repository. Use thename fo the license template without the extension.  
+=======
+# github-repo-create
+Python script for creating GitHub repos through the API
+>>>>>>> refs/remotes/origin/master
