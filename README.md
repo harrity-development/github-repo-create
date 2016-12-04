@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Python.GitHub.RepoCreate
 Python script for creating GitHub Repositories through the GitHub api
 
@@ -59,4 +58,3 @@ description
 =======
 # github-repo-create
 Python script for creating GitHub repos through the API
->>>>>>> refs/remotes/origin/master
